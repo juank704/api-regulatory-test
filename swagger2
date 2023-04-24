@@ -1,0 +1,4988 @@
+{
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "paths": {
+    "/zipcode": {
+      "put": {
+        "tags": [
+          "rsb.resources.zipcode"
+        ],
+        "operationId": "update",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ZipcodeLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_ZIPCODE_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.zipcode"
+        ],
+        "operationId": "save",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ZipcodeLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_ZIPCODE_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncodepp": {
+      "put": {
+        "tags": [
+          "rsb.resources.txncodepp"
+        ],
+        "operationId": "update_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TxnPPLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_TXN_PP_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.txncodepp"
+        ],
+        "operationId": "save_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TxnPPLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_TXN_PP_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncode": {
+      "put": {
+        "tags": [
+          "rsb.resources.txncode"
+        ],
+        "operationId": "update_2",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TxnLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_TXN_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.txncode"
+        ],
+        "operationId": "save_2",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/TxnLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_TXN_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process": {
+      "put": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "update_3",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "save_3",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "delete": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "delete",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 9999,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/type": {
+      "put": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "update_4",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessTypeDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_TYPE"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "save_4",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessTypeDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_TYPE"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "delete": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "delete_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 9,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/status": {
+      "put": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "update_5",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessStDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_STS"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "save_5",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessStDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_STS"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "delete": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "delete_2",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 9,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request": {
+      "put": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "update_6",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessReqDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_REQ"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "save_6",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessReqDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_REQ"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "delete": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "delete_3",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 999999999,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/reprove": {
+      "put": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "cancel",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessReqDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_REQ"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/approve": {
+      "put": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "approve",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ProcessReqDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_REQ"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/parameter": {
+      "put": {
+        "tags": [
+          "rsb.resources.parameter"
+        ],
+        "operationId": "update_7",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ParameterLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PARAMETERS_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.parameter"
+        ],
+        "operationId": "save_7",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ParameterLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PARAMETERS_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/natope": {
+      "put": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "update_8",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/NatOpeDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_NAT_OPE"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "save_8",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/NatOpeDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_NAT_OPE"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "delete": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "delete_4",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 99,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account-class": {
+      "put": {
+        "tags": [
+          "rsb.resources.account-class"
+        ],
+        "operationId": "update_9",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AcctClassLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_ACCT_CLASS_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      },
+      "post": {
+        "tags": [
+          "rsb.resources.account-class"
+        ],
+        "operationId": "save_9",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "required": true,
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AcctClassLogDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_ACCT_CLASS_LOG"
+            }
+          }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/zipcode/selectZipcodesLogs": {
+      "get": {
+        "tags": [
+          "rsb.resources.zipcode"
+        ],
+        "operationId": "selectZipcodesLogs",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "ZIPCODE",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/zipcode/selectZipcodesActive": {
+      "get": {
+        "tags": [
+          "rsb.resources.zipcode"
+        ],
+        "operationId": "selectZipcodesActive",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "ZIPCODE",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/zipcode/countZipcodesLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.zipcode"
+        ],
+        "operationId": "countZipCodesLogsPending",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/view/health": {
+      "get": {
+        "tags": [
+          "rsb.resources.main"
+        ],
+        "operationId": "isRunning",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncodepp/selectLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncodepp"
+        ],
+        "operationId": "selectLogsPending",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNCODEPP",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncodepp/selectBaseActive": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncodepp"
+        ],
+        "operationId": "selectBaseActive",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNCODEPP",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncodepp/countLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncodepp"
+        ],
+        "operationId": "countLogsPending",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncode/selectTxncodeLogs": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncode"
+        ],
+        "operationId": "selectTxncodeLogs",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNCODE",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncode/selectTxncodeActive": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncode"
+        ],
+        "operationId": "selectTxncodeActive",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNCODE",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/txncode/countTxncodeLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.txncode"
+        ],
+        "operationId": "countAccounttClassesLogsPending",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/statement/selectStatement": {
+      "get": {
+        "tags": [
+          "rsb.resources.statement"
+        ],
+        "operationId": "selectStatement",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNINITDT",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "desc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/statement/selectStatementInconsistencies": {
+      "get": {
+        "tags": [
+          "rsb.resources.statement"
+        ],
+        "operationId": "selectStatementInconsistencies",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "filterKey",
+            "in": "header",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "TXNINITDT",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "desc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/sgway/users-systems-groupcode": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "getUsersSystemsGroupCode",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "systemId",
+            "in": "query",
+            "required": false,
+            "default": "100000171",
+            "type": "string"
+          },
+          {
+            "name": "groupCode",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SGResponseModelSGUsersSystemsGroups"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/sgway/users-systems-entitlements": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "getUsersSystemsEntitlements",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "systemId",
+            "in": "query",
+            "required": false,
+            "default": "100000171",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SGResponseModelSGUsersSystemsEntitlements"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/sgway/users-profile": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "getUsersProfile",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SGResponseModelSGUsersProfile"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/sgway/users-csi-systems": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "getUsersCsiSystems",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "csiId",
+            "in": "query",
+            "required": false,
+            "default": "173227",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SGResponseModelSGUsersCsiSystems"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/sgway/users-csi-systems-groups": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "getUsersSystemsGroups",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "systemId",
+            "in": "query",
+            "required": false,
+            "default": "100000171",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SGResponseModelSGUsersSystemsGroups"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/security/load-session-configurations": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "loadSessionConfiguration",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/security/load-servlet-configurations": {
+      "get": {
+        "tags": [
+          "rsb.resources.support"
+        ],
+        "operationId": "loadServletConfiguration",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/type/selectProcessType": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "selectProcessStatus",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCIDTY",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/type/listAll": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "listAll",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TT7_PROCESS_TYPE"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/type/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.type"
+        ],
+        "operationId": "findById",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_TYPE"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/status/selectProcessStatus": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "selectProcessStatus_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCSTS",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/status/listAll": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "listAll_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TT7_PROCESS_STS"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/status/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.status"
+        ],
+        "operationId": "findById_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_STS"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/selectProcess": {
+      "get": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "selectProcess",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCID",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/notification": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "selectNotificationRequests",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCIDSEQ",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "desc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/month-generator": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "selectMonthGeneratorRequests",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCIDSEQ",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "desc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/loader": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "selectLoaderRequests",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCIDSEQ",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "desc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.request"
+        ],
+        "operationId": "findById_2",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 99999999,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS_REQ"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/request-log/selectRequestLogs": {
+      "get": {
+        "tags": [
+          "rsb.resources.process.request-log"
+        ],
+        "operationId": "selectRequestLogs",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "procIdSeq",
+            "in": "query",
+            "required": true,
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 99999999,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "PRCLOGSEQ",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/listAll": {
+      "get": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "listAll_2",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TT7_PROCESS"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/process/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.process"
+        ],
+        "operationId": "findById_3",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_PROCESS"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/parameter/selectLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.parameter"
+        ],
+        "operationId": "selectLogsPending_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CODPRM",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/parameter/selectBaseActive": {
+      "get": {
+        "tags": [
+          "rsb.resources.parameter"
+        ],
+        "operationId": "selectBaseActive_1",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CODPRM",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/parameter/countLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.parameter"
+        ],
+        "operationId": "countLogsPending_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/natope/selectNatOpe": {
+      "get": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "selectNatOpe",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CODNAT",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/natope/listAll": {
+      "get": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "listAll_3",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TT7_NAT_OPE"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/natope/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.natope"
+        ],
+        "operationId": "findById_4",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_NAT_OPE"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/dimp/selectDimpInconsistencies": {
+      "get": {
+        "tags": [
+          "rsb.resources.dimp"
+        ],
+        "operationId": "selectDimpInconsistencies",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CUSTID",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/customer/selectCustomer": {
+      "get": {
+        "tags": [
+          "rsb.resources.customer"
+        ],
+        "operationId": "selectCustomer",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CUSTNAME",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/customer/selectCustomerInconsistencies": {
+      "get": {
+        "tags": [
+          "rsb.resources.customer"
+        ],
+        "operationId": "selectCustomerInconsistencies",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "filterKey",
+            "in": "header",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CUSTNAME",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/customer/findById/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.customer"
+        ],
+        "operationId": "findById_5",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TT7_CUST"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/customer/findByCustId/{id}": {
+      "get": {
+        "tags": [
+          "rsb.resources.customer"
+        ],
+        "operationId": "findByCustId",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "format": "int64",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account/selectAccount": {
+      "get": {
+        "tags": [
+          "rsb.resources.account"
+        ],
+        "operationId": "selectAccount",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CUSTACNO",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account/selectAccountInconsistencies": {
+      "get": {
+        "tags": [
+          "rsb.resources.account"
+        ],
+        "operationId": "selectAccountInconsistencies",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "filterKey",
+            "in": "header",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "CUSTACNO",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account-class/selectAccountClassesLogs": {
+      "get": {
+        "tags": [
+          "rsb.resources.account-class"
+        ],
+        "operationId": "selectAccountClassesLogs",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "ACCLASS",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account-class/selectAccountClassesActive": {
+      "get": {
+        "tags": [
+          "rsb.resources.account-class"
+        ],
+        "operationId": "selectAccountClassesActive",
+        "parameters": [
+          {
+            "name": "tokenSSO",
+            "in": "header",
+            "required": true,
+            "minimum": 10,
+            "type": "string"
+          },
+          {
+            "name": "soeid",
+            "in": "header",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 10,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "default": "ACCLASS",
+            "type": "string"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "default": "asc",
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "default": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GenericResponseJsonModel"
+            }
+          }
+        },
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    },
+    "/account-class/countAccountClassesLogsPending": {
+      "get": {
+        "tags": [
+          "rsb.resources.account-class"
+        ],
+        "operationId": "countAccounttClassesLogsPending_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/JsonNode"
+            }
+          }
+        },
+        "parameters": [],
+        "produces": [
+          "application/octet-stream"
+        ]
+      }
+    }
+  },
+  "swagger": "2.0",
+  "host": "rsb-api-icg-tts-regulatoryservicesbrazil-173227.apps.namicggtd22d.ecs.dyn.nsroot.net",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/rsb-api",
+  "definitions": {
+    "ZipcodeLogDTO": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "zipcode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "state": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "citycode": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "TT7_ZIPCODE_LOG": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "zipcode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "state": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "citycode": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "TxnPPLogDTO": {
+      "type": "object",
+      "properties": {
+        "txncodepp": {
+          "type": "string"
+        },
+        "pixind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "txncode": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "TT7_TXN_PP_LOG": {
+      "type": "object",
+      "properties": {
+        "txncodepp": {
+          "type": "string"
+        },
+        "pixind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "txncode": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "TxnLogDTO": {
+      "type": "object",
+      "properties": {
+        "dimpind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "codnat": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "txncode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "drcrind": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_TXN_LOG": {
+      "type": "object",
+      "properties": {
+        "dimpind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "codnat": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "txncode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "drcrind": {
+          "type": "string"
+        }
+      }
+    },
+    "ProcessDTO": {
+      "type": "object",
+      "properties": {
+        "prcid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcdesc": {
+          "type": "string"
+        },
+        "prcidty": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcvalue": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_PROCESS": {
+      "type": "object",
+      "properties": {
+        "prcid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcdesc": {
+          "type": "string"
+        },
+        "prcidty": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcvalue": {
+          "type": "string"
+        }
+      }
+    },
+    "ProcessTypeDTO": {
+      "type": "object",
+      "properties": {
+        "prcidty": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prdesc": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_PROCESS_TYPE": {
+      "type": "object",
+      "properties": {
+        "prcidty": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prdesc": {
+          "type": "string"
+        }
+      }
+    },
+    "ProcessStDTO": {
+      "type": "object",
+      "properties": {
+        "prcsts": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "descsts": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_PROCESS_STS": {
+      "type": "object",
+      "properties": {
+        "prcsts": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "descsts": {
+          "type": "string"
+        }
+      }
+    },
+    "ProcessReqDTO": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "prcid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "custid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcidseq": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcsts": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "dtyyyymm": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcnotification": {
+          "type": "string"
+        },
+        "codfin": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_PROCESS_REQ": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "prcid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "custid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcidseq": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcsts": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "dtyyyymm": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "prcnotification": {
+          "type": "string"
+        },
+        "codfin": {
+          "type": "string"
+        }
+      }
+    },
+    "ParameterLogDTO": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "codprm": {
+          "type": "string"
+        },
+        "desprm": {
+          "type": "string"
+        },
+        "valprm": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_PARAMETERS_LOG": {
+      "type": "object",
+      "properties": {
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        },
+        "codprm": {
+          "type": "string"
+        },
+        "desprm": {
+          "type": "string"
+        },
+        "valprm": {
+          "type": "string"
+        }
+      }
+    },
+    "NatOpeDTO": {
+      "type": "object",
+      "properties": {
+        "codnat": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "desnat": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_NAT_OPE": {
+      "type": "object",
+      "properties": {
+        "indnat": {
+          "type": "string"
+        },
+        "codnat": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "desnat": {
+          "type": "string"
+        }
+      }
+    },
+    "AcctClassLogDTO": {
+      "type": "object",
+      "properties": {
+        "dimpind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "acclass": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_ACCT_CLASS_LOG": {
+      "type": "object",
+      "properties": {
+        "dimpind": {
+          "type": "string"
+        },
+        "cdusrins": {
+          "type": "string"
+        },
+        "cdusrapr": {
+          "type": "string"
+        },
+        "dtusrapr": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tpactn": {
+          "type": "string"
+        },
+        "acclass": {
+          "type": "string"
+        },
+        "rowid": {
+          "type": "string"
+        },
+        "dtusrins": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dtusrins_": {
+          "type": "string"
+        },
+        "dtusrapr_": {
+          "type": "string"
+        }
+      }
+    },
+    "GenericResponseJsonModel": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "totalNotFiltered": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pageNumber": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pageSize": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "totalPages": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "rows": {
+          "$ref": "#/definitions/JsonNode"
+        }
+      }
+    },
+    "JsonNode": {
+      "type": "object"
+    },
+    "SGAttributes": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "SGFunctions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "parentId": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "SGModules": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "functions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGFunctions"
+          }
+        }
+      }
+    },
+    "SGResponseModelSGUsersSystemsGroups": {
+      "type": "object",
+      "properties": {
+        "threadId": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/SGUsersSystemsGroups"
+        }
+      }
+    },
+    "SGRules": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGAttributes"
+          }
+        }
+      }
+    },
+    "SGUsersSystemsGroups": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGModules"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGRules"
+          }
+        }
+      }
+    },
+    "SGEntitlements": {
+      "type": "object",
+      "properties": {
+        "ent": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "string"
+        }
+      }
+    },
+    "SGResponseModelSGUsersSystemsEntitlements": {
+      "type": "object",
+      "properties": {
+        "threadId": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/SGUsersSystemsEntitlements"
+        }
+      }
+    },
+    "SGUsersSystemsEntitlements": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGModules"
+          }
+        },
+        "entitlements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SGEntitlements"
+          }
+        }
+      }
+    },
+    "SGResponseModelSGUsersProfile": {
+      "type": "object",
+      "properties": {
+        "threadId": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/SGUsersProfile"
+        }
+      }
+    },
+    "SGUsersProfile": {
+      "type": "object",
+      "properties": {
+        "ritsId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "soeid": {
+          "type": "string"
+        },
+        "geid": {
+          "type": "string"
+        }
+      }
+    },
+    "SGResponseModelSGUsersCsiSystems": {
+      "type": "object",
+      "properties": {
+        "threadId": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/SGUsersCsiSystems"
+        }
+      }
+    },
+    "SGUsersCsiSystems": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "csiId": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "TT7_CUST": {
+      "type": "object",
+      "properties": {
+        "custtype": {
+          "type": "string"
+        },
+        "custtaxid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "custname": {
+          "type": "string"
+        },
+        "msgaddr": {
+          "type": "string"
+        },
+        "custid": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "zipcode": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    }
+  },
+  "x-components": {}
+}
